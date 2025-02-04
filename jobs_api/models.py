@@ -16,7 +16,6 @@ class Jobs(models.Model):
     type = models.CharField(max_length=250)
     location = models.CharField(max_length=250)
     description = models.CharField(max_length=500)
-    description = models.CharField(max_length=500)
     company = models.ForeignKey(Company, on_delete=models.CASCADE, related_name="Jobs")
     
     

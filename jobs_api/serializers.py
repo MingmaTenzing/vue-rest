@@ -5,7 +5,7 @@ from .models import Jobs, Company
 class JobSerializer(serializers.HyperlinkedModelSerializer):
     class Meta: 
         model= Jobs
-        fields= "__all__"
+        fields= [ "id", "url", 'title', 'type', 'location', 'description', 'company' ]
         
         
 class CompanySerializer(serializers.HyperlinkedModelSerializer):
